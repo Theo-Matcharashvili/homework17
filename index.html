@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>DOM/javascript</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<h5> 1. html ფაილში (ჯავასკრიპტით არა) შევქმნათ ღილაკი, ამ ღილაკის კლიკზე წაიშალოს თვითონ ეს ღილაკი ანუ რომ დავკლიკავ ღილაკზე გაქრეს </h5>
+		<button  id="btn" onclick="removeButton(this)">  click me!</button>
+		<script>
+			//task 1
+			function removeButton(obj) {
+				const Obj=document.getElementById("btn");
+				Obj.style.display= "none";
+			}
+		</script>
+		
+		<h5> 2. ჯავასკრიპტით შევქმნათ img tag რომელსაც src ად მივანიჭებთ ამ: https://i.ytimg.com/vi/VEx5hNYeZtY/hqdefault.jpg სურათის ლინკს და ეს შექმნილი img ჩავსვათ body ში (ჯავასკრიპტით). </h5>
+		<script>
+			//task 2
+			const myImg=document.createElement("img");
+			myImg.setAttribute("src","https://i.ytimg.com/vi/VEx5hNYeZtY/hqdefault.jpg");
+			myImg.setAttribute("alt", "some img")
+			document.body.appendChild(myImg)
+		</script>
+
+		<h5> 3. html შექმენით <div id="user-list"></div> გამოიყენეთ მიმაგრებული სურათი (hiok.png) დიზაინის ასაწყობად, არქივში ( lecture17.zip ) => app.js ში ნახეთ users  მასივი რომელიც შედგება 4 ობიექტისგან
+      ეს მასივი გამოიყენეთ და html ში გამოიტანეთ (ჯავასკრიპტით) 4 user card როგორც დიზანშია ნაჩვენები, თვითვეული ქარდი უნდა შეიცავდეს შემდეგ ინგფირმაციას users მასივის ელემენტებიდან     (ობიექტებიდან): 1. ავატარი ჩასვით სურათის ადგილას. 2. "John Doe" ს ადგილას ჩასვით first_name და last_name. </h5>
+
+      	<h5>4. (მოქმედებები) #3 დავალებაში შექმნილ user card - ს აქვს ღილაკები (აიქონები თუ ვერ ნახეთ ამ ღილაკებზე სიტყვიერად დაწერეთ წაშლა და ინფო), წაშლა ღილაკზე დაჭერით წავშალოთ შესაბამისი user card-ი, ინფო ღილაკზე დაჭერის შედეგად ღილაკების ქვემოთ გამოვაჩინოთ email ცენტრში </h5>
+
+      	<h5>5. სანამ #1, #2 დავალებას დაიყებ წაიკითხე და გაიაზრე #3 და #4 თუ რამე შეკითხვები გაგიჩნდა მოიწერე </h5>
+      	
+
+
+
+
+
+
+	</body>
+</html>
